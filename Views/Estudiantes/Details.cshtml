@@ -1,0 +1,11 @@
+﻿@model Practica4.DAL.Estudiante
+
+
+
+<h2>Detalles del Estudiante</h2>
+<p><strong>ID:</strong> @Model.Id</p>
+<p><strong>Nombre:</strong> @Model.Nombre @Model.Apellido</p>
+<p><strong>Edad:</strong> @Model.Edad</p>
+<p><strong>Correo:</strong> @Model.Correo</p>
+
+@Html.ActionLink("Volver", "Index", null, new { @class = "btn btn-secondary" })

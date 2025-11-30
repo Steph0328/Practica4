@@ -1,0 +1,28 @@
+﻿@model List<Practica4.DAL.Estudiante>
+
+
+<h2>Listado de Estudiantes</h2>
+
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Correo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.Id</td>
+                <td>@e.Nombre @e.Apellido</td>
+                <td>@e.Edad</td>
+                <td>@e.Correo</td>
+                <td>@Html.ActionLink("Detalles", "Details", new { id = e.Id }, new { @class = "btn btn-info btn-sm" })</td>
+            </tr>
+        }
+    </tbody>
+</table>
