@@ -28,6 +28,27 @@ namespace Practica4.Web.Controllers
             return View(estudiante);
         }
 
+        // ENDPOINT GET /api/estudiantes-----
+        [HttpGet]
+        public JsonResult GetAll()
+        {
+            var lista = _service.ObtenerTodos();
+            return Json(lista, JsonRequestBehavior.AllowGet);
+        }
+
+        //GET /api/estudiantes/{id}///
+        [HttpGet]
+        public JsonResult GetById(int id)
+        {
+            var estudiante = _service.ObtenerPorId(id);
+
+            if (estudiante == null)
+                return Json(new { mensaje = "Estudiante no encontrado" }, JsonRequestBehavior.AllowGet);
+
+            return Json(estudiante, JsonRequestBehavior.AllowGet);
+        }
+
+
         // Crear
         [HttpPost]
         public JsonResult Create(Estudiante estudiante)
