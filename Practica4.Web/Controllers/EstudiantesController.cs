@@ -15,38 +15,7 @@ namespace Practica4.Web.Controllers
             return View(lista);
         }
 
-        // Obtener todos
-        public JsonResult GetAll()
-        {
-            return Json(_service.ObtenerTodos(), JsonRequestBehavior.AllowGet);
-        }
-
-        public ActionResult Details(int id)
-        {
-            var estudiante = _service.ObtenerPorId(id);
-            if (estudiante == null) return HttpNotFound();
-            return View(estudiante);
-        }
-
-        // ENDPOINT GET /api/estudiantes-----
-        [HttpGet]
-        public JsonResult GetAll()
-        {
-            var lista = _service.ObtenerTodos();
-            return Json(lista, JsonRequestBehavior.AllowGet);
-        }
-
-        //GET /api/estudiantes/{id}///
-        [HttpGet]
-        public JsonResult GetById(int id)
-        {
-            var estudiante = _service.ObtenerPorId(id);
-
-            if (estudiante == null)
-                return Json(new { mensaje = "Estudiante no encontrado" }, JsonRequestBehavior.AllowGet);
-
-            return Json(estudiante, JsonRequestBehavior.AllowGet);
-        }
+       
 
 
         // Crear
