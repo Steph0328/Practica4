@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Web.Http;
 
 namespace Practica4.Web
 {
@@ -12,6 +13,9 @@ namespace Practica4.Web
     {
         protected void Application_Start()
         {
+            // Register Web API configuration
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
