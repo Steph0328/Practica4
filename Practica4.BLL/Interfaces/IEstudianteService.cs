@@ -7,5 +7,9 @@ namespace Practica4.BLL.Interfaces
     {
         List<Estudiante> ObtenerTodos();
         Estudiante ObtenerPorId(int id);
+
+        void CrearEstudiante(Estudiante estudiante);
+        void ActualizarEstudiante(Estudiante estudiante);
+        void EliminarEstudiante(int id);
     }
 }

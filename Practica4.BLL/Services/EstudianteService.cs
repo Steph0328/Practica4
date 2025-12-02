@@ -24,5 +24,25 @@ namespace Practica4.BLL.Services
             if (id <= 0) return null;
             return _repo.GetById(id);
         }
+
+        public void CrearEstudiante(Estudiante estudiante)
+        {
+            if (estudiante == null) return;
+            _repo.Create(estudiante);
+        }
+
+        public void ActualizarEstudiante(Estudiante estudiante)
+        {
+            if (estudiante == null || estudiante.Id <= 0) return;
+            _repo.Update(estudiante);
+        }
+
+        public void EliminarEstudiante(int id)
+        {
+            if (id <= 0) return;
+            _repo.Delete(id);
+        }
+
+
     }
 }

@@ -57,3 +57,13 @@ S:\Progra Avanzada Web\Practica 4\Practica4.DAL\obj\Debug\Practica4.DAL.csproj.C
 S:\Progra Avanzada Web\Practica 4\Practica4.DAL\obj\Debug\Practica.72A38B19.Up2Date
 S:\Progra Avanzada Web\Practica 4\Practica4.DAL\obj\Debug\Practica4.DAL.dll
 S:\Progra Avanzada Web\Practica 4\Practica4.DAL\obj\Debug\Practica4.DAL.pdb
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\bin\Practica4.DAL.dll.config
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\bin\Practica4.DAL.dll
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\bin\Practica4.DAL.pdb
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\obj\Debug\Practica4.DAL.csproj.AssemblyReference.cache
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\obj\Debug\Practica4.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\obj\Debug\Practica.72A38B19.Up2Date
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\obj\Debug\Practica4.DAL.dll
+C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.DAL\obj\Debug\Practica4.DAL.pdb
