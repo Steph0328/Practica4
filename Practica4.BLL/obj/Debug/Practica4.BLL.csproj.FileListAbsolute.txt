@@ -73,3 +73,16 @@ C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Pra
 C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.BLL\obj\Debug\Practica.3C88CA47.Up2Date
 C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.BLL\obj\Debug\Practica4.BLL.dll
 C:\Users\Chris\Documents\Programacion Avanzada WEB\Practica 4 Ultimo enviado\Practica4\Practica4.BLL\obj\Debug\Practica4.BLL.pdb
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\bin\Practica4.BLL.dll.config
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\bin\Practica4.BLL.dll
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\bin\Practica4.BLL.pdb
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\bin\Practica4.DAL.dll
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\bin\Practica4.DAL.pdb
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\bin\Practica4.DAL.dll.config
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\obj\Debug\Practica4.BLL.csproj.AssemblyReference.cache
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\obj\Debug\Practica4.BLL.csproj.CoreCompileInputs.cache
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\obj\Debug\Practica.3C88CA47.Up2Date
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\obj\Debug\Practica4.BLL.dll
+C:\Users\edson\Source\Repos\Practica4\Practica4.BLL\obj\Debug\Practica4.BLL.pdb

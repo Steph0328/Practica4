@@ -1,5 +1,4 @@
-﻿using Microsoft.Ajax.Utilities;
-using Practica4.BLL.Services;
+﻿using Practica4.BLL.Services;
 using Practica4.DAL;
 using System.Web.Mvc;
 
@@ -15,8 +14,9 @@ namespace Practica4.Web.Controllers
             return View(lista);
         }
 
-        // Obtener todos
-        public JsonResult GetAll()
+        // JSON helper for views / AJAX: GET /Estudiantes/GetAllJson
+        [HttpGet]
+        public JsonResult GetAllJson()
         {
             return Json(_service.ObtenerTodos(), JsonRequestBehavior.AllowGet);
         }
@@ -28,17 +28,9 @@ namespace Practica4.Web.Controllers
             return View(estudiante);
         }
 
-        // ENDPOINT GET /api/estudiantes-----
+        // JSON helper for views / AJAX: GET /Estudiantes/GetByIdJson/{id}
         [HttpGet]
-        public JsonResult GetAll()
-        {
-            var lista = _service.ObtenerTodos();
-            return Json(lista, JsonRequestBehavior.AllowGet);
-        }
-
-        //GET /api/estudiantes/{id}///
-        [HttpGet]
-        public JsonResult GetById(int id)
+        public JsonResult GetByIdJson(int id)
         {
             var estudiante = _service.ObtenerPorId(id);
 
@@ -48,36 +40,35 @@ namespace Practica4.Web.Controllers
             return Json(estudiante, JsonRequestBehavior.AllowGet);
         }
 
-
-        // Crear
+        // Create via MVC form (POST)
         [HttpPost]
-        public JsonResult Create(Estudiante estudiante)
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Estudiante estudiante)
         {
+            if (!ModelState.IsValid) return View(estudiante);
+
             _service.CrearEstudiante(estudiante);
-            return Json(new { success = true });
+            return RedirectToAction("Index");
         }
 
-        // Obtener por ID
-        public JsonResult GetById(int id)
-        {
-            var est = _service.ObtenerPorId(id);
-            return Json(est, JsonRequestBehavior.AllowGet);
-        }
-
-        // Actualizar
+        // Update via MVC form (POST)
         [HttpPost]
-        public JsonResult Update(Estudiante estudiante)
+        [ValidateAntiForgeryToken]
+        public ActionResult Update(Estudiante estudiante)
         {
+            if (!ModelState.IsValid) return View(estudiante);
+
             _service.ActualizarEstudiante(estudiante);
-            return Json(new { success = true });
+            return RedirectToAction("Index");
         }
 
-        // Eliminar
+        // Delete via MVC form (POST)
         [HttpPost]
-        public JsonResult Delete(int id)
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id)
         {
             _service.EliminarEstudiante(id);
-            return Json(new { success = true });
+            return RedirectToAction("Index");
         }
     }
 }
